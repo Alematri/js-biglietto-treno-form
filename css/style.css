@@ -2,7 +2,7 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.container {
+.container-sm {
   text-align: center;
   margin: 50px;
 }
@@ -26,4 +26,23 @@ button {
 
 button:hover {
   background-color: #0056b3;
+}
+
+.row{
+  background-color: skyblue;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.container-sm{
+  background-color: #0056b3;
+}
+
+h1{
+  color: white;
+  padding-top: 10px;
+}
+
+#nameInput{
+  text-align: center;
 }

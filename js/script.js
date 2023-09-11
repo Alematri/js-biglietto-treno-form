@@ -19,11 +19,11 @@ function randomgen(tiponumero) {
   if (tiponumero == "carrozza") {
     min=1;
     max=7;
-    testo = "la tua carrozza è la numero: "
+    testo = "N°: "
   } else {
     min=1000;
     max=9999;
-    testo = "il numero del tuo biglietto è: "
+    testo = "ID: "
   }
     return testo + Math.floor(Math.random() * (max - min +1) +min);
 }
@@ -44,5 +44,5 @@ function calcolaPrezzo() {
   }
 
   const risultato = document.getElementById("risultato");
-  risultato.innerHTML = "Il prezzo del biglietto è: €" + prezzoTotale.toFixed(2);
+  risultato.innerHTML = "€" + prezzoTotale.toFixed(2);
 }
