@@ -1,10 +1,23 @@
 body {
   font-family: Arial, sans-serif;
+  background-image: url(https://media.npr.org/assets/img/2010/09/03/thomascgi_custom-fa1741025b00f1e188b3a31914a4d6e60afe528c-s1100-c50.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.app{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container-sm {
   text-align: center;
-  margin: 50px;
+  background-color: #0056b3;
+  border: 1px solid black;
+  border-radius: 8px;
 }
 
 label {
@@ -22,6 +35,8 @@ button {
   color: #fff;
   border: none;
   cursor: pointer;
+  border: 1px solid white;
+  border-radius: 6px;
 }
 
 button:hover {
@@ -34,10 +49,6 @@ button:hover {
   padding-bottom: 30px;
 }
 
-.container-sm{
-  background-color: #0056b3;
-}
-
 h1{
   color: white;
   padding-top: 10px;
@@ -46,3 +57,4 @@ h1{
 #nameInput{
   text-align: center;
 }
+
