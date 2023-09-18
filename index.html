@@ -13,67 +13,84 @@
 
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="./css/style.css">
-  <title>Questo mondo non mi renderà gattino</title>
+  <title>Biglietto treno</title>
 </head>
 
   <body>
-      <div class="app">
-        <div class="container-sm">
-        
-          <h1>Calcolatore Prezzo Biglietto</h1>
 
-          <div class="row row flex-column flex-md-row">
-            <div class="col">
-              <label for="nameInput">Nome cognome:</label>
-              <br>
+    <div class="container-sm">
+
+      <div class="container-custom">
+
+        <h1>Calcolatore Prezzo Biglietto</h1>
+
+        
+
+          <div class="row pt-3 pb-3" id="input-row">
+
+            <div class="col-12 col-md-4">
+              <h3>Nome e cognome:</h3>
               <input type="text" id="nameInput">
             </div>
 
-            <div class="col">
-              <label for="kmInput">KM da percorrere:</label>
-              <br>
+            <div class="col-12 col-md-4">
+              <h3>KM da percorrere:</h3>
               <input type="number" id="kmInput" min="1" required>
             </div>
 
-            <div class="col">
-              <label for="ageInput">Età del passeggero:</label>
-              <br>
-              <input type="number" id="ageInput" min="1" required>
+            <div class="col-12 col-md-4">
+              <h3>Età del passeggero:</h3>
+              <select id="ageSelect">
+                <option value="underage">Minorenne</option>
+                <option value="adult">Prezzo pieno</option>
+                <option value="overage">Over 65</option>
+              </select>
             </div>
           </div>
 
-          <div class="row">
+          <div class="row align-items-center justify-content-between" id="button-row">
             <div class="col">
-              <button onclick="stamparisultato()">Genera il tuo biglietto</button>
+              <button id="btn-gen">Genera il tuo biglietto</button>
+            </div>
+
+            <div class="col">
+              <button id="btn-null">Annulla</button>
             </div>
           </div>
 
-          <div class="row flex-column flex-md-row">
+          <div class="row pb-3 d-none" id="resultRow">
 
-            <div class="col">
-              <h5>Nome Cognome:</h5>
+            <div class="d-block blueline"></div>
+            <h2>IL TUO BIGLIETTO</h2>
+            <div class="d-block blueline"></div>
+
+            <div class="col-12 col-md-3 text-center mb-3">
+              <h3>Passeggero:</h3>
               <div id="nomecognome"></div>
             </div>
-
-            <div class="col">
-              <h5>Prezzo biglietto:</h5>
+          
+            <div class="col-12 col-md-3 text-center mb-3">
+              <h3>Prezzo biglietto:</h3>
               <div id="risultato"></div>
             </div>
-
-            <div class="col">
-              <h5>Carrozza:</h5>
+          
+            <div class="col-12 col-md-3 text-center mb-3">
+              <h3>Carrozza:</h3>
               <div id="numerocarro"></div>
             </div>
-
-            <div class="col">
-              <h5>Numero biglietto:</h5>
+          
+            <div class="col-12 col-md-3 text-center mb-3">
+              <h3>Numero biglietto:</h3>
               <div id="codicebiglietto"></div>
             </div>
-          </div>
 
-        </div>
+          </div>
       </div>
+    </div>
+
     <script src="./js/script.js"></script>
+
   </body>
+
 </html>
 
